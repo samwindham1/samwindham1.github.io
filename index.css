@@ -1,0 +1,119 @@
+#scroll-menu > .nav-link.active {
+    font-weight: bold;
+    position: relative;
+}
+
+#scroll-menu > .nav-link.active::before {
+    content: "—";
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes animateAvatar {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        border-bottom-left-radius: 100%;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-100%);
+        border-bottom-left-radius: 50%;
+    }
+}
+
+#avatar {
+    animation: animateAvatar 1.5s ease 0s 1;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateX(-100%) !important;
+    border-bottom-left-radius: 50%;
+}
+
+@keyframes animateIntro {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg) translateY(-10%) scaleX(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0) scaleX(100%);
+    }
+}
+
+#intro [id^="intro-span-"] {
+    transform: rotateX(90deg) translateY(-10%);
+    display: inline-block;
+    animation: animateIntro 0.5s ease 0s 1 forwards;
+    transform-origin: center left;
+}
+
+@keyframes animateHeader {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#header {
+    animation: animateHeader 1.5s ease 0s 1;
+}
+
+@keyframes animateFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#footer {
+    animation: animateFooter 1.5s ease 0s 1;
+}
+
+@keyframes animateBlob {
+    0% {
+        opacity: 0;
+        transform: translate(-75%, 25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+#blob {
+    animation: animateBlob 1.5s ease 0s 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0);
+    width: min(200vh, 200vw);
+    height: min(200vh, 200vw);
+    z-index: -100;
+    background-image: linear-gradient(180deg, #eeffff, #ffeeff);
+    border-radius: 100%;
+}
+
+@keyframes animateArrow {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
+
+#down-arrow {
+    animation: animateArrow 0.25s ease 6s 2 alternate;
+}
