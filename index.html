@@ -127,33 +127,62 @@
   <h3 class="w3-center">MY PROJECTS</h3>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center" style="height:100%">
+  <div class="w3-row-padding w3-center" style="height:100%; margin-top: 50px;">
     <div class="w3-col m6">
-      <a href="https://github.com/samwindham1/Video-Node">
-        <img src="./images/VideoNode.jpg" style="width:100%" class="w3-hover-opacity" alt="Video Node GitHub">
+      <a href="https://samwindham1.github.io/AuDU" title="View project demo">
+        <img src="./images/AuDU.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
       </a>
       <div class="w3-row">
-        <a href = "https://github.com/samwindham1/Video-Node">
-          <h4 class="w3-left w3-margin-right">Video Node</h4>
-        </a>
-      </div>
-      <div class = "row">
-        <p class="w3-left-align">A local video library that utilizes VLC to play TV Shows and Movies.
-          Implemented with Node.js, NW.js, HTML, JavaScript, and CSS.</p>
-      </div>
-    </div>
-    <div class="w3-col m6">
-      <a href="https://github.com/samwindham1/AuDU">
-        <img src="./images/AuDU.jpg" style="width:100%" class="w3-hover-opacity" alt="AuDu GitHub">
-      </a>
-      <div class="w3-row">
-        <a href = "https://github.com/samwindham1/AuDU">
+        <a href="https://github.com/samwindham1/AuDU" title="View source">
           <h4 class="w3-left w3-margin-right">AuDU</h4>
         </a>
       </div>
-      <div class = "row">
-        <p class="w3-left-align">Web app that uses Javascript to pull an audio stream from SoundCloud and generate a
-            live game with beat detection.</p>
+      <div class="row">
+        <p class="w3-left-align">Web app that pulls an audio stream from
+          <a href="https://developers.soundcloud.com/docs/api/">SoundCloud's API</a>
+          and generates a live game with beat detection.</p>
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <a href="https://samwindham1.github.io/wikipedia-viewer" title="View project demo">
+        <img src="./images/wikipedia-viewer.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
+      </a>
+      <div class="w3-row">
+        <a href="https://github.com/samwindham1/wikipedia-viewer" title="View source">
+          <h4 class="w3-left w3-margin-right">Wikipedia Viewer</h4>
+        </a>
+      </div>
+      <div class="row">
+        <p class="w3-left-align">Search for a Wikipedia page! Using <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia's API</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center" style="height:100%">
+    <div class="w3-col m6">
+      <a href="https://samwindham1.github.io/random-quote" title="View project demo">
+        <img src="./images/random-quote.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
+      </a>
+      <div class="w3-row">
+        <a href="https://github.com/samwindham1/random-quote" title="View source">
+          <h4 class="w3-left w3-margin-right">Random Quote</h4>
+        </a>
+      </div>
+      <div class="row">
+        <p class="w3-left-align">Grabs a random quote! Using <a href="https://favqs.com/api">FavQ's API</a>.</p>
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <a href="https://samwindham1.github.io/current-weather/" title="View project demo">
+        <img src="./images/current-weather.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
+      </a>
+      <div class="w3-row">
+        <a href="https://github.com/samwindham1/current-weather" title="View source">
+          <h4 class="w3-left w3-margin-right">Current Weather</h4>
+        </a>
+      </div>
+      <div class="row">
+        <p class="w3-left-align">Get weather conditions at your current location. Using </br><a href="https://developers.google.com/maps/documentation/geocoding/start">Google's geocode API</a> and
+          <a href="https://fcc-weather-api.glitch.me/">Free Code Camp's Weather API</a>.</p>
       </div>
     </div>
   </div>
@@ -231,7 +260,7 @@ function myMap()
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
+  var marker=new google.maps.Marker({
     position: myCenter,
   });
   marker.setMap(map);
@@ -239,30 +268,30 @@ function myMap()
 
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+  document.getElementById("img01").src=element.src;
+  document.getElementById("modal01").style.display="block";
+  var captionText=document.getElementById("caption");
+  captionText.innerHTML=element.alt;
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
+window.onscroll=function() {myFunction()};
 function myFunction() {
-    var navbar = document.getElementById("myNavbar");
+    var navbar=document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        navbar.className="w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        navbar.className=navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
-    var x = document.getElementById("navDemo");
+    var x=document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className=x.className.replace(" w3-show", "");
     }
 }
 </script>

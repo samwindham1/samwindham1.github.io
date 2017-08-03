@@ -44,3 +44,9 @@ body, html {
         background-attachment: scroll;
     }
 }
+
+.project-image {
+    box-shadow: 0 6px 15px #666;
+     image-rendering: crisp-edges;
+     width:100%;
+}
