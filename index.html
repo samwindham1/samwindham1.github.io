@@ -1,301 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sam Windham</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Samuel Windham,a student at University of Denver, Colorado for B.S. in Computer Science. Projects on Gihub and LinkedIn site. Contact info here."/>
+    <head>
+        <title>Sam Windham</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Samuel Windham, Full-Stack Software Engineer. Projects on Gihub and LinkedIn site. Contact info here."
+        />
 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./assets/fonts/font-mfizz.css">
-  <link rel="stylesheet" href="./assets/css/index.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 
-  <link rel="icon" type="image/ico" href="./images/favicon.ico"/>
-<head>
-<body>
+        <link rel="stylesheet" href="index.css" />
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="./resume.pdf"
-      target="_blank"
-      class="w3-bar-item w3-button w3-hide-small">
-      <i class="fa fa-file-text"></i> RESUME
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="./resume.pdf" target="_blank" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SAM WINDHAM</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>Computer Science Student</em></p>
-  <p>Student at University of Denver focusing on web development. I have experience with full-stack development
-    and a strong understanding of algorithm design. Languages I know: Java, C/C++, HTML, CSS, JavaScript, and Python.
-    Technology I am familiar with: Git, Subversion, SQL, OpenMP, Node.js, AngularJS, React, and Spring Framework.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Sam Windham</b></p>
-      <img src="./images/avatar.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="55%">
-    </div>
-
-    <div class="w3-col m6 w3-padding-large">
-      <p>I started programming in high school and fell in love with it. I started out programming in Java and then
-        eventually C and C++ in the robotics club. After taking AP computer science I decided to work toward a career
-        in computer science. I am currently a student at University of Denver pursuing a BS degree in Computer Science.
-        I have worked as an IT technician, both remotely and as a work study position on campus. Last summer I did
-        basic HTML and scripting for a small business and recently started an internship at Arrow Electronics doing
-        full-stack web development. In these roles I have gained experience with HMTL, CSS, Javascript and Angular 2.
-      </p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Skills</p>
-  <div>
-    <h5><i class="icon-javascript"></i>
-        <i class="icon-java-bold"></i>
-        <i class="icon-cplusplus"></i>
-        <span class="w3-hide-small">JavaScript, Java, C/C++</span>
-    </h5>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
-    </div>
-  </div>
-  <div>
-    <h5><i class="fa fa-html5"></i>
-        <i class="fa fa-css3"></i>
-        <i class="icon-python"></i>
-        <i class="icon-git"></i>
-        <span class="w3-hide-small">HTML, CSS, Python, Git</span>
-    </h5>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%"> </div>
-    </div>
-  </div>
-  <div>
-    <h5><i class="icon-nodejs"></i>
-        <i class="icon-angular"></i>
-        <i class="icon-reactjs"></i>
-        <span class="w3-hide-small">NodeJS, Angular2, ReactJS</span>
-    </h5>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:45%"> </div>
-    </div>
-  </div>
-
-  <!--Resume link-->
-  <div class="w3-center">
-    <a href="./resume.pdf"
-      target="_blank"
-      class="w3-button w3-padding-large"
-      style="margin-top:64px">RESUME</a>
-  </div>
-
-</div>
-
-<!-- Second Parallax Image with Project Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
-  </div>
-</div>
-
-<!-- Container (Project Section) -->
-<div class="w3-content w3-container w3-padding-64" id="projects">
-  <h3 class="w3-center">MY PROJECTS</h3>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center" style="height:100%; margin-top: 50px;">
-    <div class="w3-col m6">
-      <a href="https://samwindham1.github.io/AuDU" title="View project demo">
-        <img src="./images/AuDU.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
-      </a>
-      <div class="w3-row">
-        <a href="https://github.com/samwindham1/AuDU" title="View source">
-          <h4 class="w3-left w3-margin-right">AuDU</h4>
-        </a>
-      </div>
-      <div class="row">
-        <p class="w3-left-align">Web app that pulls an audio stream from
-          <a href="https://developers.soundcloud.com/docs/api/">SoundCloud's API</a>
-          and generates a live game with beat detection.</p>
-      </div>
-    </div>
-    <div class="w3-col m6">
-      <a href="https://samwindham1.github.io/wikipedia-viewer" title="View project demo">
-        <img src="./images/wikipedia-viewer.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
-      </a>
-      <div class="w3-row">
-        <a href="https://github.com/samwindham1/wikipedia-viewer" title="View source">
-          <h4 class="w3-left w3-margin-right">Wikipedia Viewer</h4>
-        </a>
-      </div>
-      <div class="row">
-        <p class="w3-left-align">Search for a Wikipedia page! Using <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia's API</a>.</p>
-      </div>
-    </div>
-  </div>
-  <div class="w3-row-padding w3-center" style="height:100%">
-    <div class="w3-col m6">
-      <a href="https://samwindham1.github.io/random-quote" title="View project demo">
-        <img src="./images/random-quote.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
-      </a>
-      <div class="w3-row">
-        <a href="https://github.com/samwindham1/random-quote" title="View source">
-          <h4 class="w3-left w3-margin-right">Random Quote</h4>
-        </a>
-      </div>
-      <div class="row">
-        <p class="w3-left-align">Grabs a random quote! Using <a href="https://favqs.com/api">FavQ's API</a>.</p>
-      </div>
-    </div>
-    <div class="w3-col m6">
-      <a href="https://samwindham1.github.io/current-weather/" title="View project demo">
-        <img src="./images/current-weather.jpg" class="w3-hover-opacity project-image" alt="AuDu GitHub">
-      </a>
-      <div class="w3-row">
-        <a href="https://github.com/samwindham1/current-weather" title="View source">
-          <h4 class="w3-left w3-margin-right">Current Weather</h4>
-        </a>
-      </div>
-      <div class="row">
-        <p class="w3-left-align">Get weather conditions at your current location. Using </br><a href="https://developers.google.com/maps/documentation/geocoding/start">Google's geocode API</a> and
-          <a href="https://fcc-weather-api.glitch.me/">Free Code Camp's Weather API</a>.</p>
-      </div>
-    </div>
-  </div>
-
-  <!--Github link-->
-  <div class="w3-center">
-    <a href="https://github.com/samwindham1"
-      class="w3-button w3-padding-large"
-      style="margin-top:64px">GITHUB</a>
-  </div>
-
-</div>
-
-<!-- Third Parallax Image with Contact Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>Send me an email or follow the links below to find out more.</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale w3-hide-small" style="width:100%;height:300px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <div><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Denver, US</div>
-        <div><i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (972) 746-1372</div>
-        <div>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right w3-left"></i>
-          <a href="mailto:sam.windham95@gmail.com" style="text-decoration:none;"> sam.windham95@gmail.com</a>
+        <link rel="icon" type="image/ico" href="./images/favicon.ico" />
+    </head>
+    <body>
+        <div class="w-100 h-100 overflow-hidden">
+            <div id="blob"></div>
         </div>
-        <br/>
-        <div>
-          <i class="fa fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-          <a href="https://github.com/samwindham1" style="text-decoration:none;"> GitHub</a>
+        <div class="container-xl d-flex flex-column justify-content-between vh-100">
+            <header id="header" class="mb-3 mb-sm-5">
+                <nav class="navbar navbar-expand-sm navbar-light align-items-start justify-content-between py-3">
+                    <a class="navbar-brand link-dark mb-0 me-0 me-sm-3 py-2" href="#">
+                        <span class="">Sam Windham.</span>
+                        <span class="fw-light text-muted d-none d-sm-inline">Software Engineer</span>
+                        <span class="fw-light text-muted h6 d-inline d-sm-none">Software Engineer</span>
+                    </a>
+                    <button
+                        class="navbar-toggler p-2 border-0 my-auto"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-auto flex-grow-0" id="navbarSupportedContent">
+                        <nav class="navbar-nav flex-row mt-sm-0">
+                            <a class="nav-link link-dark me-2 me-sm-0" href="#about">About</a>
+                            <a class="nav-link link-dark me-2 me-sm-0" href="#resume">Resume</a>
+                            <a class="nav-link link-dark me-2 me-sm-0" href="#projects">Projects</a>
+                            <a class="nav-link link-dark me-2 me-sm-0" href="#contact">Contact</a>
+                        </nav>
+                    </div>
+                </nav>
+            </header>
+            <div class="d-flex flex-column-reverse flex-sm-row h-100">
+                <div class="me-sm-5 w-sm-50 mb-4 mb-sm-0 pb-5 pb-sm-0">
+                    <h1 id="intro">
+                        Hi! I'm Sam Windham, a Full Stack Software Engineer. I design and create websites from the
+                        ground up – using React & modern JavaScript.
+                    </h1>
+                </div>
+                <div class="position-relative h-100" style="min-width: 50%">
+                    <img
+                        id="avatar"
+                        src="./images/avatar.jpg"
+                        height="auto"
+                        width="auto"
+                        class="position-absolute top-0 start-100"
+                    />
+                </div>
+            </div>
+            <div id="footer" class="d-flex flex-nowrap justify-content-between pb-3">
+                <div class="align-self-end">
+                    <a class="btn fw-light text-muted p-0" href="mailto:sam.windham95@gmail.com">
+                        sam.windham95@gmail.com
+                    </a>
+                </div>
+                <div id="down-arrow" class="scroll-arrow">
+                    <a class="btn border-0 p-1" href="#about">
+                        <img src="./images/arrow.svg" height="48" width="48" />
+                    </a>
+                </div>
+            </div>
         </div>
-        <div>
-          <i class="fa fa-linkedin-square fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-          <a href="https://www.linkedin.com/in/samuelwindham" style="text-decoration:none;"> LinkedIn</a>
+        <div class="container-xl row m-0 mt-5 pt-5">
+            <div class="d-none d-sm-block col col-2 mt-3 ps-4">
+                <nav id="scroll-menu" class="nav flex-column position-sticky" style="top: 16px">
+                    <a id="menu-about" class="nav-link link-dark me-2 me-sm-0" href="#about">About</a>
+                    <a id="menu-resume" class="nav-link link-dark me-2 me-sm-0" href="#resume">Resume</a>
+                    <a id="menu-projects" class="nav-link link-dark me-2 me-sm-0" href="#projects">Projects</a>
+                    <a id="menu-contact" class="nav-link link-dark me-2 me-sm-0" href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="col col-sm-10 col-md-8 ms-auto">
+                <div class="row">
+                    <h1 id="about" class="page-section py-3">About</h1>
+                    <p class="fs-4 text-secondary">
+                        I have been programming as long as I can remember. In highschool... University of Denver...
+                        Paris, France... Dallas remotely.
+                    </p>
+                    <p class="fs-4 text-secondary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar nunc non sapien luctus,
+                        ac ultricies diam euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Donec at egestas ante.
+                    </p>
+                    <p class="fs-4 text-secondary">
+                        Fusce augue urna, hendrerit eget libero non, fringilla tempus mauris. Nullam porttitor neque at
+                        ante commodo laoreet. Fusce eu nibh in lacus lobortis dictum. Aliquam ornare quam sed semper
+                        condimentum. Aliquam convallis nulla in pulvinar luctus.
+                    </p>
+                </div>
+                <div class="row">
+                    <h1 id="resume" class="page-section py-3">Resume</h1>
+                    <p>
+                        <a class="link-secondary fs-4" href="./resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <span>Open Resume PDF</span><i class="bi bi-box-arrow-up-right ms-2"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="row">
+                    <h1 id="projects" class="page-section py-3">Projects</h1>
+                    <p class="fs-4 text-secondary">Here are afew side projects I've worked on in the past:</p>
+                </div>
+                <div class="row">
+                    <h1 id="contact" class="page-section py-3">Contact</h1>
+                    <p class="fs-4">For project inquiries, please get in touch.</p>
+                    <ul class="list-unstyled">
+                        <li class="my-2">
+                            <a class="link-secondary text-decoration-none" href="mailto:sam.windham95@gmail.com"
+                                ><i class="bi bi-envelope me-2"></i>sam.windham95@gmail.com</a
+                            >
+                        </li>
+                        <li class="my-2">
+                            <a class="link-secondary text-decoration-none" href="#"
+                                ><i class="bi bi-linkedin me-2"></i>LinkedIn</a
+                            >
+                        </li>
+                        <li class="my-2">
+                            <a class="link-secondary text-decoration-none" href="#"
+                                ><i class="bi bi-github me-2"></i>Github</a
+                            >
+                        </li>
+                    </ul>
+                    <p class="fs-4 text-secondary"></p>
+                </div>
+                <div class="row py-5"></div>
+            </div>
         </div>
-        <div>
-          <i class="fa fa-stack-overflow fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-          <a href="https://stackoverflow.com/cv/samuelwindham" style="text-decoration:none;"> StackOverflow</a>
-        </div>
-        <div>
-          <i class="fa fa-file-text fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
-          <a href="./resume.pdf" target="_blank" style="text-decoration:none;"> Resume</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-padding-64 w3-black w3-opacity-min">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-</footer>
-
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(39.742043, -104.991531);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker=new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src=element.src;
-  document.getElementById("modal01").style.display="block";
-  var captionText=document.getElementById("caption");
-  captionText.innerHTML=element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll=function() {myFunction()};
-function myFunction() {
-    var navbar=document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className="w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className=navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x=document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className=x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAotw4e2b2VG5e-WFCeRvRfOHA2xgpkSRw&callback=myMap"></script>
-
-</body>
+        <script src="index.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
