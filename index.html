@@ -57,8 +57,10 @@
             <div class="d-flex flex-column-reverse flex-sm-row h-100">
                 <div class="me-sm-5 w-sm-50 mb-4 mb-sm-0 pb-5 pb-sm-0">
                     <h1 id="intro">
-                        Hi! I'm Sam Windham, a Full Stack Software Engineer. I design and create websites from the
-                        ground up – using React & modern JavaScript.
+                        <span class="intro-inner opacity-0">
+                            Hi! I'm Sam Windham, a Full Stack Software Engineer. I design and create websites from the
+                            ground up – using React & modern JavaScript.
+                        </span>
                     </h1>
                 </div>
                 <div class="position-relative h-100" style="min-width: 50%">
@@ -84,68 +86,159 @@
                 </div>
             </div>
         </div>
-        <div class="container-xl row m-0 mt-5 pt-5">
-            <div class="d-none d-sm-block col col-2 mt-3 ps-4">
-                <nav id="scroll-menu" class="nav flex-column position-sticky" style="top: 16px">
-                    <a id="menu-about" class="nav-link link-dark me-2 me-sm-0" href="#about">About</a>
-                    <a id="menu-resume" class="nav-link link-dark me-2 me-sm-0" href="#resume">Resume</a>
-                    <a id="menu-projects" class="nav-link link-dark me-2 me-sm-0" href="#projects">Projects</a>
-                    <a id="menu-contact" class="nav-link link-dark me-2 me-sm-0" href="#contact">Contact</a>
-                </nav>
-            </div>
-            <div class="col col-sm-10 col-md-8 ms-auto">
-                <div class="row">
-                    <h1 id="about" class="page-section py-3">About</h1>
-                    <p class="fs-4 text-secondary">
-                        I have been programming as long as I can remember. In highschool... University of Denver...
-                        Paris, France... Dallas remotely.
-                    </p>
-                    <p class="fs-4 text-secondary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar nunc non sapien luctus,
-                        ac ultricies diam euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                        fames ac turpis egestas. Donec at egestas ante.
-                    </p>
-                    <p class="fs-4 text-secondary">
-                        Fusce augue urna, hendrerit eget libero non, fringilla tempus mauris. Nullam porttitor neque at
-                        ante commodo laoreet. Fusce eu nibh in lacus lobortis dictum. Aliquam ornare quam sed semper
-                        condimentum. Aliquam convallis nulla in pulvinar luctus.
-                    </p>
+        <div class="container-xl mt-5 pt-5">
+            <div class="row">
+                <div class="d-none d-sm-block col col-2 mt-3 ps-4">
+                    <nav id="scroll-menu" class="nav flex-column position-sticky" style="top: 16px">
+                        <a id="menu-about" class="nav-link link-dark me-2 me-sm-0" href="#about">About</a>
+                        <a id="menu-resume" class="nav-link link-dark me-2 me-sm-0" href="#resume">Resume</a>
+                        <a id="menu-projects" class="nav-link link-dark me-2 me-sm-0" href="#projects">Projects</a>
+                        <a id="menu-contact" class="nav-link link-dark me-2 me-sm-0" href="#contact">Contact</a>
+                    </nav>
                 </div>
-                <div class="row">
-                    <h1 id="resume" class="page-section py-3">Resume</h1>
-                    <p>
-                        <a class="link-secondary fs-4" href="./resume.pdf" target="_blank" rel="noopener noreferrer">
-                            <span>Open Resume PDF</span><i class="bi bi-box-arrow-up-right ms-2"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="row">
-                    <h1 id="projects" class="page-section py-3">Projects</h1>
-                    <p class="fs-4 text-secondary">Here are afew side projects I've worked on in the past:</p>
-                </div>
-                <div class="row">
-                    <h1 id="contact" class="page-section py-3">Contact</h1>
-                    <p class="fs-4">For project inquiries, please get in touch.</p>
-                    <ul class="list-unstyled">
-                        <li class="my-2">
-                            <a class="link-secondary text-decoration-none" href="mailto:sam.windham95@gmail.com"
-                                ><i class="bi bi-envelope me-2"></i>sam.windham95@gmail.com</a
+                <div class="col col-sm-10 col-md-8 ms-auto">
+                    <div id="about" class="row page-section">
+                        <h1 class="py-3">About</h1>
+                        <p class="fs-4 text-secondary">
+                            I have been programming as long as I can remember. In highschool I started out programming
+                            Arduino boards and robotics, deciding I wanted to to go to school for computer science.
+                        </p>
+                        <p class="fs-4 text-secondary">
+                            I went on to get my Bachelor of Science in Computer Science at University of Denver in
+                            Colorado, and an internship in Centennial following graduation. I got my first taste of
+                            frontend development, working with Angular and CSS.
+                        </p>
+                        <p class="fs-4 text-secondary">
+                            In 2018, I moved to Paris, France to work at Shift Technology as full stack engineer-
+                            working in React and C#. At the start of the pandemic, I moved back home to Dallas Texas.
+                        </p>
+                        <p class="fs-4 text-secondary">
+                            Since then, I have been working remotely from Dallas and taking on side projects to design
+                            and implement web-applications.
+                        </p>
+                    </div>
+                    <div id="resume" class="row page-section">
+                        <h1 class="py-3">Resume</h1>
+                        <p>
+                            <a
+                                class="link-secondary fs-4"
+                                href="./resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                        </li>
-                        <li class="my-2">
-                            <a class="link-secondary text-decoration-none" href="#"
-                                ><i class="bi bi-linkedin me-2"></i>LinkedIn</a
+                                <span>Open Resume PDF</span><i class="bi bi-box-arrow-up-right ms-2"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div id="projects" class="row page-section">
+                        <h1 class="py-3">Projects</h1>
+                        <p class="fs-4 text-secondary">Here are a few examples of my projects:</p>
+                        <div class="mb-5">
+                            <h4>Capital Prawn</h4>
+                            <p class="text-secondary">
+                                I designed and implemented the frontend of this trading platform for macOS.
+                            </p>
+                            <div class="row d-flex flex-column flex-md-row">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <a
+                                        href="./images/projects-capital-prawn1.png"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><img
+                                            src="./images/projects-capital-prawn1.png"
+                                            class="rounded border border-light shadow-sm"
+                                            width="auto"
+                                            height="auto"
+                                            style="max-width: 100%; max-height: 100%"
+                                    /></a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <a
+                                        href="./images/projects-capital-prawn2.png"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><img
+                                            src="./images/projects-capital-prawn2.png"
+                                            class="rounded border border-light shadow-sm"
+                                            width="auto"
+                                            height="auto"
+                                            style="max-width: 100%; max-height: 100%"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <h4>Component Library</h4>
+                            <a class="link-secondary" href="https://github.com/samwindham1/component-library"
+                                >samwindham1/component-library</a
                             >
-                        </li>
-                        <li class="my-2">
-                            <a class="link-secondary text-decoration-none" href="#"
-                                ><i class="bi bi-github me-2"></i>Github</a
+                            <p class="text-secondary">A theme-able React component library using styled-components.</p>
+                            <div class="row d-flex flex-column flex-md-row">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <a
+                                        href="./images/projects-component-library.png"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        ><img
+                                            src="./images/projects-component-library.png"
+                                            class="rounded border border-light shadow-sm"
+                                            width="auto"
+                                            height="auto"
+                                            style="max-width: 100%; max-height: 100%"
+                                    /></a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <script src="https://gist.github.com/samwindham1/537fdbcadf6b81cabeabd82e18380cb2.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Algo Trader</h4>
+                            <a class="link-secondary" href="https://github.com/samwindham1/algo-trader"
+                                >samwindham1/algo-trader</a
                             >
-                        </li>
-                    </ul>
-                    <p class="fs-4 text-secondary"></p>
+                            <p class="text-secondary">An algorithmic trading backtester using Python and BackTrader.</p>
+                            <div class="row d-flex flex-column flex-md-row">
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                                    <a href="./images/projects-algo.png" target="_blank" rel="noopener noreferrer"
+                                        ><img
+                                            src="./images/projects-algo.png"
+                                            class="rounded border border-light shadow-sm"
+                                            width="auto"
+                                            height="auto"
+                                            style="max-width: 100%; max-height: 100%"
+                                    /></a>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <script src="https://gist.github.com/samwindham1/d046090e74f3defab029482436d2eb57.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="row page-section">
+                        <h1 class="py-3">Contact</h1>
+                        <p class="text-secondary fs-4">For project inquiries, please get in touch.</p>
+                        <ul class="list-unstyled">
+                            <li class="my-2">
+                                <a class="link-secondary text-decoration-none" href="mailto:sam.windham95@gmail.com"
+                                    ><i class="bi bi-envelope me-2"></i>sam.windham95@gmail.com</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a class="link-secondary text-decoration-none" href="#"
+                                    ><i class="bi bi-linkedin me-2"></i>LinkedIn</a
+                                >
+                            </li>
+                            <li class="my-2">
+                                <a class="link-secondary text-decoration-none" href="#"
+                                    ><i class="bi bi-github me-2"></i>Github</a
+                                >
+                            </li>
+                        </ul>
+                        <p class="fs-4 text-secondary"></p>
+                    </div>
+                    <div class="row py-5"></div>
                 </div>
-                <div class="row py-5"></div>
             </div>
         </div>
         <script src="index.js"></script>
