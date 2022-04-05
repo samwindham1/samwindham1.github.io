@@ -98,8 +98,8 @@
     top: 0;
     left: 0;
     transform: translate(-50%, 0);
-    width: min(200vh, 200vw);
-    height: min(200vh, 200vw);
+    width: min(200vh, calc(200vw - 50px));
+    height: min(200vh, calc(200vw - 50px));
     z-index: -100;
     background-image: linear-gradient(180deg, #eeffff, #ffeeff);
     border-radius: 100%;
@@ -116,4 +116,29 @@
 
 #down-arrow {
     animation: animateArrow 0.25s ease 6s 2 alternate;
+}
+
+.gist-header {
+    display: inline-flex;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 6px;
+}
+
+.gist-tab {
+    color: #666;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+.gist-tab:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+.gist-tab.active {
+    background: #f7f7f7;
+    font-weight: 600;
+}
+
+.gist .blob-wrapper {
+    max-height: 360px;
+    overflow-y: auto !important;
 }
