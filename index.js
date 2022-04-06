@@ -65,7 +65,11 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
         .join(" ");
     var spans = document.createRange().createContextualFragment(str);
     introH1.replaceChildren(spans);
+} else {
+    var introH1 = document.getElementById("intro");
+    introH1.style.opacity = 1;
 }
+
 //
 // Add tabs to gist examples
 //
