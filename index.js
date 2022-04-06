@@ -50,18 +50,22 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
     });
 }
 
-var introH1 = document.getElementById("intro");
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-var split = introH1.getElementsByClassName("intro-inner")[0].innerText.split(" ");
-var str = split
-    .map(
-        (word, i) =>
-            `<span id="intro-span-${i}" style="animation-delay: ${i * (1 / (split.length + 1))}s;">${word}</span>`
-    )
-    .join(" ");
-var spans = document.createRange().createContextualFragment(str);
-introH1.replaceChildren(spans);
+if (!/Mobi|Android/i.test(navigator.userAgent)) {
+    var introH1 = document.getElementById("intro");
 
+    var split = introH1.getElementsByClassName("intro-inner")[0].innerText.split(" ");
+    var str = split
+        .map(
+            (word, i) =>
+                `<span id="intro-span-${i}" style="animation-delay: ${i * (1 / (split.length + 1))}s;">${word}</span>`
+        )
+        .join(" ");
+    var spans = document.createRange().createContextualFragment(str);
+    introH1.replaceChildren(spans);
+}
 //
 // Add tabs to gist examples
 //
