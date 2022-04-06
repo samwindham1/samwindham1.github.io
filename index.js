@@ -67,7 +67,7 @@ if (!/Mobi|Android/i.test(navigator.userAgent)) {
     introH1.replaceChildren(spans);
 } else {
     var introH1 = document.getElementById("intro");
-    introH1.style.opacity = 1;
+    introH1.getElementsByClassName("intro-inner")[0].style.opacity = 1;
 }
 
 //
